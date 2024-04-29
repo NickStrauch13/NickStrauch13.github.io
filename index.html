@@ -5,31 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
         <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="links-container">
+                <div class="link-subcontainer" id="projects-link">
+                    <a href="#" onclick="showSection('projects')">Projects</a>
+                </div>
+                <div class="link-subcontainer" id="about-link">
+                    <a href="#" onclick="showSection('about')">About Me</a>
+                </div>
+                <div class="link-subcontainer" id="contact-link">
+                    <a href="#" onclick="showSection('contact')">Contact</a>
+                </div>
+            </div>
         </nav>
     </header>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my projects.</p>
-        <!-- You can list your projects here with links -->
-    </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This section is about me.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out via email: <a href="mailto:nickjstrauch@gmail.com">nickjstrauch@gmail.com</a></p>
-    </section>
+    <div id="content" class="content">
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <img class="project-image" src="images/project1.jpg" alt="Project 1 Image">
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <img class="project-image" src="images/project1.jpg" alt="Project 2 Image">
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <img class="project-image" src="images/project1.jpg" alt="Project 3 Image">
+                </div>
+                <div class="project">
+                    <h3>Project 4</h3>
+                    <img class="project-image" src="images/project1.jpg" alt="Project 4 Image">
+                </div>
+                <div class="project">
+                    <h3>Project 5</h3>
+                    <img class="project-image" src="images/project1.jpg" alt="Project 5 Image">
+                </div>
+                <div class="project">
+                    <h3>Project 6</h3>
+                    <img class="project-image" src="images/project1.jpg" alt="Project 6 Image">
+                </div>
+            </div>
+        </div>
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>This section is about me.</p>
+        </div>
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out via email: <a href="mailto:nickjstrauch@gamil.com">nickjstrauch@gamil.com</a></p>
+        </div>
+    </div>
     <footer>
         <p>Copyright © Nick Strauch 2024</p>
     </footer>

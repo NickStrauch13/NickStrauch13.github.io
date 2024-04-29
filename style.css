@@ -12,37 +12,106 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding-top: 1vh;
+    padding-bottom: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
     text-align: center;
+    font-size: calc(0.5em + 0.8vw);
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20vw;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
+.link-subcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 3vw;
+    border-radius: 5px 5px 0 0;
+    border: none;
+}   
 
-nav ul li a {
+.links-container a {
     color: #fff;
     text-decoration: none;
 }
 
-/* Section styling */
-section {
-    padding: 20px;
-    margin: 0 10px;
-    background: white;
-    border: 1px solid #ddd;
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; 
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal width */
+    gap: 10vh 10vw;
+    margin: 1vh 1vw;
+    padding: 0; 
+    width: 90%;
+    height: 90%;    
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #fff; 
+    border: 1px solid #ddd; 
+    padding: 1vw;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;;
+    width: auto;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(31, 53, 255, 0.3); 
+}
+
+.project-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+/*  For smaller screens */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* One column on very small screens */
+    }
 }
 
 /* Footer styling */
 footer {
     text-align: center;
-    padding: 10px 20px;
+    padding: 1vh 20vw;
     background: #333;
     color: white;
 }
