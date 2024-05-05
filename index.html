@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Nick Strauch</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -11,13 +11,13 @@
     <header>
         <nav>
             <div class="links-container">
-                <div class="link-subcontainer" id="projects-link">
+                <div class="link-subcontainer" id="projects-link" onclick="showSection('projects')">
                     <a href="#" onclick="showSection('projects')">Projects</a>
                 </div>
-                <div class="link-subcontainer" id="about-link">
+                <div class="link-subcontainer" id="about-link" onclick="showSection('about')">
                     <a href="#" onclick="showSection('about')">About Me</a>
                 </div>
-                <div class="link-subcontainer" id="contact-link">
+                <div class="link-subcontainer" id="contact-link" onclick="showSection('contact')">
                     <a href="#" onclick="showSection('contact')">Contact</a>
                 </div>
             </div>
@@ -55,7 +55,121 @@
         </div>
         <div id="about" class="section">
             <h2>About Me</h2>
-            <p>This section is about me.</p>
+            <img class="profile-image" src="images/profile.JPEG" alt="Profile Image">
+            <p class="about-me-tagline">Hello tagline here</p>
+            <div class="about-container">
+                <div class="about-sub-container-education">
+                    <h2 class="about-sub-header-education">Education</h2>
+                    <div class="education-info-container">
+                        <div class="education-info">
+                            <h3>Duke University</h3>
+                            <strong>Bachelor of Science</strong>
+                            <p>Computer Science  +  Electrical and Computer Engineering</p>
+                            <p>Concentration in Machine Learning</p>
+                            <p>May 2023</p>
+                        </div>
+                        <div class="education-info">
+                            <h3>Duke University</h3>
+                            <p><strong>Master of Engineering</strong></p>
+                            <p>Artificial Intelligence</p>
+                            <p>May 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-sub-container-experience">
+                    <h2 class="about-sub-header-experience">Experience</h2>
+                    <div class="experience-info-container">
+                        <div class="experience-info">
+                            <h3>DocNexus</h3>
+                            <p>NLP Engineer</p>
+                            <p>February 2022 - Current</p>
+                        </div>
+                        <div class="experience-info">
+                            <h3>Trans Machine Technologies</h3>
+                            <p>Project Engineer</p>
+                            <p>May 2018 - August 2020</p>
+                        </div>
+                </div>
+                <div class="about-sub-container-skills">
+                    <h2 class="about-sub-header-skills">Skills</h2>
+                    <div class="skills-container">
+                        <div class="skill-class">
+                            <h3 class="skill-class-header">Programming Languages</h3>
+                            <div class="skill-list">
+                                <div class="skill">
+                                    <img src="images/skill_icons/python.png" class="skill-icon" alt="Python Logo">
+                                    <p>Python</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="images/skill_icons/java.png" class="skill-icon" alt="Java Logo">
+                                    <p>Java</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-class">
+                            <h3 class="skill-class-header">Frameworks and Libraries</h3>
+                            <div class="skill-list">
+                                <div class="skill">
+                                    <img src="images/skill_icons/pytorch.png" class="skill-icon" alt="PyTorch Logo">
+                                    <p>PyTorch</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="images/skill_icons/tensorflow.png" class="skill-icon" alt="TensorFlow Logo">
+                                    <p>TensorFlow</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="images/skill_icons/sklearn.png" class="skill-icon" alt="Scikit-Learn Logo">
+                                    <p>Scikit-Learn</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="images/skill_icons/xgboost.png" class="skill-icon" alt="XGBoost Logo">
+                                    <p>XGBoost</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="images/skill_icons/spacy.png" class="skill-icon" alt="spaCy Logo">
+                                    <p>spaCy</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="images/skill_icons/huggingface.png" class="skill-icon" alt="Transformers Logo">
+                                    <p>Transformers</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="images/skill_icons/pandas.png" class="skill-icon" alt="Pandas Logo">
+                                    <p>Pandas</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="images/skill_icons/numpy.svg" class="skill-icon" alt="Numpy Logo">
+                                    <p>NumPy</p>
+                                </div>
+                                <div class="skill">
+                                    <p></p>
+                                </div>
+                                <div class="skill">
+                                    <p></p>
+                                </div>
+                                <div class="skill">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-class">
+                            <h3 class="skill-class-header">Programming Languages</h3>
+                            <div class="skill-list">
+                                <div class="skill">
+                                    <img src="images/skill_icons/python.png" class="skill-icon" alt="Python Logo">
+                                    <p>Python</p>
+                                </div>
+                                <div class="skill">
+                                    <img src="images/skill_icons/java.png" class="skill-icon" alt="Java Logo">
+                                    <p>Java</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="about-sub-container">
+                    <h2 class="about-sub-header">Interests</h2>
+                </div>
+            </div>
         </div>
         <div id="contact" class="section">
             <h2>Contact</h2>
