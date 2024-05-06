@@ -16,11 +16,11 @@ function showSection(sectionId) {
         container.className = 'link-subcontainer'; 
     });
 
-    // Change the background color of the active link container
+    // Change the class of the active link container
     document.getElementById(sectionId + '-link').className = 'link-subcontainer-active';
 }
 
-// Initially show the 'projects' section
+// Initially show the 'about' section
 window.onload = () => {
-    showSection('projects');
+    showSection('about');
 };

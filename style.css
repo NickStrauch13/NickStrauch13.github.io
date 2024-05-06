@@ -187,11 +187,8 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     background: #fff; 
-    border: 1px solid #ddd; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -202,9 +199,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--duke-blue);
-    border-radius: 10px;
-    padding: 1vh 1vw;
+    background-image: url('images/duke_background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about-sub-header-education {
@@ -241,8 +239,6 @@ a:hover {
     align-items: center;
     width: 100%;
     background-color: var(--light-blue0);
-    border-radius: 10px;
-    padding: 1vh 1vw;
 }
 
 .about-sub-header-experience {
@@ -279,8 +275,6 @@ a:hover {
     align-items: center;
     width: 100%;
     background-color: var(--light-blue1);
-    border-radius: 10px;
-    padding: 1vh 1vw;
 }
 
 .about-sub-header-skills {
@@ -292,12 +286,13 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1vh 1vw;
+    padding: 1vh 1vw;
 }
 
 .skill-class {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: cornflowerblue;
 }
@@ -321,18 +316,39 @@ a:hover {
 }
 
 .skill {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 1vw;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+/* Interests */
+.about-sub-container-interests {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    padding: 1vh 1vw;
-    border: 1px solid #ddd;
+    width: 100%;
+    background-color: var(--dark-blue0);
 }
 
-.skill:hover {
-    /* get slightly bigger */
-    transform: scale(1.05);
+.about-sub-header-interests {
+    font-size: calc(0.5em + 1vw);
+    color: #FFFFFF;
+}
+
+.interests-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vh 1vw;
+    padding: 1vh 1vw;
+    background-color: yellow;
 }
 
 footer {
