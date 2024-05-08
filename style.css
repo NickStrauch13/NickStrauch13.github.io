@@ -203,7 +203,9 @@ a:hover {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10vh 0vw;
+    padding: 20vh 0vw;
+    border-top: black 4px solid;
+    border-bottom: black 4px solid;
 }
 
 .about-sub-header-education {
@@ -230,11 +232,12 @@ a:hover {
     width: 45%;
     min-height: 24vh;
     padding: 1vh 1vw;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .education-info:hover {
     background: rgb(255, 255, 255);
+    transform: scale(1.005);
 }
 
 .education-school {
@@ -274,7 +277,8 @@ a:hover {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10vh 0vw;
+    padding: 20vh 0vw;
+    border-bottom: black 4px solid;
 }
 
 .about-sub-header-experience {
@@ -302,11 +306,12 @@ a:hover {
     width: 28%;
     min-height: 24vh;
     padding: 1vh 1vw;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .experience-info:hover {
     background: rgb(255, 255, 255);
+    transform: scale(1.005);
 }
 
 .expereince-company {
@@ -335,7 +340,7 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    background-image: url('images/skills.jpg');
+    background-image: url('images/skills6.jpeg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -349,19 +354,28 @@ a:hover {
 }
 
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1vh 1vw;
-    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .skill-class {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    background-color: rgba(174, 202, 255, 0.9);
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
+    margin: 1vh 0vw;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.skill-class:hover {
+    background: rgb(255, 255, 255);
+    transform: scale(1.005);
 }
 
 .skill-class-header {
@@ -370,16 +384,17 @@ a:hover {
 }
 
 .skill-list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .skill-icon {
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     border-radius: 10px;
-    margin: 1vh 1vw;
 }
 
 .skill {
@@ -387,9 +402,12 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1vh 1vw;
+    padding: 0.5vh 0.5vw;
     transition: transform 0.3s ease-in-out;
     color: #000000;
+    font-size: calc(0.5em + 0.6vw);
+    text-align: center;
+    margin: 0vh 2vw;
 }
 
 .skill:hover {
@@ -466,6 +484,40 @@ footer {
         min-height: 16vh;
         padding: 1vh 1vw;
         transition: background 0.3s ease-in-out;
+    }
+
+    .experience-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding: 1vh 1vw;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.9);
+        width: 28%;
+        min-height: 16vh;
+        padding: 1vh 1vw;
+        transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .skill {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5vh 0.5vw;
+        transition: transform 0.3s ease-in-out;
+        color: #000000;
+        font-size: calc(0.5em + 0.6vw);
+        text-align: center;
+        margin: 0vh 1.5vw;
+    }
+
+    .skill-icon {
+        width: 4vw;
+        height: 4vw;
+        border-radius: 3px;
+
     }
 }
 
