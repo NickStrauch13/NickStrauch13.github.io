@@ -394,7 +394,7 @@ a:hover {
 .skill-icon {
     width: 4vw;
     height: 4vw;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .skill {
@@ -481,7 +481,7 @@ footer {
         border-radius: 10px;
         background: rgba(255, 255, 255, 0.9);
         width: 45%;
-        min-height: 16vh;
+        min-height: 18vh;
         padding: 1vh 1vw;
         transition: background 0.3s ease-in-out;
     }
@@ -495,7 +495,7 @@ footer {
         border-radius: 10px;
         background: rgba(255, 255, 255, 0.9);
         width: 28%;
-        min-height: 16vh;
+        min-height: 18vh;
         padding: 1vh 1vw;
         transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
     }
@@ -510,7 +510,7 @@ footer {
         color: #000000;
         font-size: calc(0.5em + 0.6vw);
         text-align: center;
-        margin: 0vh 1.5vw;
+        margin: 0vh 1.0vw;
     }
 
     .skill-icon {
